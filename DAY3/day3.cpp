@@ -17,5 +17,8 @@ void count(int n){
 }
 
 int main(){
-    count(34);
+    int n;
+    cout<<"Enter the number:";
+    cin>>n;
+    count(n);
 }
