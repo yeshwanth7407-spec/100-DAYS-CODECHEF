@@ -25,6 +25,18 @@ void Insertion_Sort(int* arr,int n){
     }
 }
 
+void selection(int* arr,int n){
+    for(int i=0;i<n;i++){
+        int t=arr[i];
+        for(int j=i+1;j<n;j++){
+            if(arr[j]<t){
+                arr[j]=arr[i];
+                
+            }
+        }
+    }
+}
+
 void Print(int* arr,int n){
     for(int i=0;i<n;i++){
         cout<<arr[i]<<endl;
@@ -41,6 +53,7 @@ int main(){
     }
 
     // Bubble_Sort(arr,n);
-    Insertion_Sort(arr,n);
+    // Insertion_Sort(arr,n);
+    // selection(arr,n);
     Print(arr,n);
 }
